@@ -3,62 +3,33 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
-{% include base_path %}
+## Education
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+- **Ph.D. in Artificial Intelligence**, The Hong Kong University of Science and Technology (Guangzhou), AI Thrust, 2026–present. Advised by Prof. Linfeng Zhang and Prof. Xuming Hu.
+- **B.Eng. in Software Engineering**, Harbin Institute of Technology, 2022–2026.
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Research experience
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+- **Research Intern**, Efficient and Precision Intelligent Computing (EPIC) Lab, Shanghai Jiao Tong University, 2024–2026. Supervised by Prof. Linfeng Zhang.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Research interests
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+Discrete diffusion language models · efficient LLM inference · adaptive caching · block-wise denoising · speculative decoding · efficient training and serving.
+
+## Open source
+
+- [dLLM-Cache](https://github.com/maomaocun/dLLM-cache) — adaptive caching for diffusion LLM inference.
+- [dLLM-Var](https://github.com/maomaocun/dLLM-Var) — native variable-length generation for diffusion LLMs.
+- [dLLM-Factory](https://github.com/maomaocun/dLLM-Factory) — tools for training diffusion language models.
+
+## Selected publications
+
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
+## Links
+
+[Google Scholar](https://scholar.google.com.hk/citations?user=zKnktocAAAAJ&hl=zh-CN) · [alphaXiv](https://www.alphaxiv.org/@yicun-yang) · [GitHub](https://github.com/maomaocun)

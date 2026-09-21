@@ -1,0 +1,257 @@
+/* Personal homepage styles */
+
+.home-hero {
+  position: relative;
+  overflow: hidden;
+  margin: -0.5em 0 3.5em;
+  padding: 3.25em 3.25em 2.75em;
+  border: 1px solid #d9e2ec;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(29, 113, 154, 0.16), transparent 32%),
+    linear-gradient(135deg, #f5f9fc 0%, #eef5f5 100%);
+}
+
+.home-hero::after {
+  position: absolute;
+  right: -5em;
+  bottom: -6em;
+  width: 15em;
+  height: 15em;
+  border: 1px solid rgba(29, 113, 154, 0.18);
+  border-radius: 50%;
+  content: "";
+}
+
+.home-hero__eyebrow,
+.section-kicker,
+.work-card__meta {
+  margin: 0 0 0.75em;
+  color: #1d719a;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.home-hero h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 0.22em;
+  color: #17324d;
+  font-size: clamp(2.4em, 6vw, 4.4em);
+  line-height: 1;
+}
+
+.home-hero__lead {
+  position: relative;
+  z-index: 1;
+  max-width: 34em;
+  margin: 0 0 1.5em;
+  color: #425466;
+  font-size: 1.22em;
+  line-height: 1.55;
+}
+
+.home-hero__actions,
+.home-contact p:last-child {
+  position: relative;
+  z-index: 1;
+}
+
+.home-button {
+  margin: 0.25em 0.45em 0.25em 0;
+  border: 1px solid #b9c9d6;
+  border-radius: 999px;
+  background: #fff;
+  color: #17324d !important;
+  box-shadow: none;
+  font-size: 0.9em;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.home-button:hover,
+.home-button:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(23, 50, 77, 0.12);
+}
+
+.home-button--primary {
+  border-color: #1d719a;
+  background: #1d719a;
+  color: #fff !important;
+}
+
+.home-tags {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55em;
+  margin-top: 2em;
+}
+
+.home-tags span {
+  padding: 0.42em 0.8em;
+  border: 1px solid rgba(29, 113, 154, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #31536d;
+  font-size: 0.84em;
+}
+
+.home-section {
+  margin: 0 0 4.2em;
+  scroll-margin-top: 5em;
+}
+
+.home-section h2 {
+  margin: 0 0 0.8em;
+  color: #17324d;
+  font-size: 2em;
+}
+
+.home-section > p {
+  max-width: 48em;
+}
+
+.home-section--soft {
+  margin-right: -1.2em;
+  margin-left: -1.2em;
+  padding: 2em 1.2em 2.3em;
+  border-top: 1px solid #e4ebf0;
+  border-bottom: 1px solid #e4ebf0;
+  background: #f8fafb;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1em;
+}
+
+.research-card,
+.work-card {
+  border: 1px solid #dce6ed;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.research-card {
+  padding: 1.35em;
+}
+
+.research-card__number {
+  margin-bottom: 1.2em;
+  color: #1d719a;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.research-card h3,
+.work-card h3 {
+  margin: 0 0 0.55em;
+  color: #17324d;
+  font-size: 1.12em;
+}
+
+.research-card p,
+.work-card p {
+  margin-bottom: 0;
+  color: #536779;
+  font-size: 0.94em;
+  line-height: 1.62;
+}
+
+.work-list {
+  display: grid;
+  gap: 0.9em;
+}
+
+.work-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5em;
+  padding: 1.25em 1.4em;
+}
+
+.work-card h3 a {
+  color: #17324d;
+}
+
+.work-card__meta {
+  margin-bottom: 0.45em;
+  font-size: 0.7em;
+}
+
+.work-card__code {
+  flex: 0 0 auto;
+  margin-top: 0.2em;
+  color: #1d719a;
+  font-size: 0.88em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.section-more {
+  margin-top: 1.2em;
+  font-weight: 700;
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 5.5em 1fr;
+  gap: 1em;
+  padding: 0.8em 0;
+  border-bottom: 1px solid #e4ebf0;
+}
+
+.news-list time {
+  color: #1d719a;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.home-contact {
+  margin-bottom: 1em;
+  padding-top: 0.5em;
+}
+
+@media (max-width: 767px) {
+  .home-hero {
+    margin-top: -0.5em;
+    padding: 2.2em 1.5em 2em;
+  }
+
+  .home-hero__lead {
+    font-size: 1.08em;
+  }
+
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-section--soft {
+    margin-right: -0.5em;
+    margin-left: -0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+
+  .work-card {
+    display: block;
+  }
+
+  .work-card__code {
+    display: inline-block;
+    margin-top: 1em;
+  }
+}

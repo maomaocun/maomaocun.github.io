@@ -7,12 +7,12 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "zh-CN" # The locale setting for your site, used for date formatting, e.g. "en-US", "fr-FR", "de-DE", "zh-CN"
+locale                   : "en-US" # The locale setting for your site, used for date formatting, e.g. "en-US", "fr-FR", "de-DE", "zh-CN"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Yicun Yang 's Academic Portfolio"
+title                    : "Yicun Yang | Ph.D. Student in AI"
 title_separator          : "-"
 name                     : &name "Yicun Yang"
-description              : &description "Yicun Yang's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Yicun Yang is a Ph.D. student in Artificial Intelligence at HKUST(GZ), working on discrete diffusion language models and efficient AI systems."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://maomaocun.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -23,13 +23,13 @@ repository               : "maomaocun/maomaocun.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "./asset/image.png"
+  avatar           : "yicun-yang.jpg"
   name             : "Yicun Yang"
   pronouns         : "maomaocun" # example: "she/her"  
-  bio              : "PHD student at Epic Lab ,interested in Diffsion LLM and Efficient AI" # A short bio that appears in the author profile section
-  location         : "China"
-  employer         : "Epic Lab"
-  uri              : # URL
+  bio              : "Ph.D. student in AI at HKUST(GZ), working with the EPIC Lab on discrete diffusion LLMs and efficient AI." # A short bio that appears in the author profile section
+  location         : "Guangzhou, China"
+  employer         : "HKUST(GZ) · EPIC Lab"
+  uri              : "https://www.alphaxiv.org/@yicun-yang" # URL
   email            : "yangyicun187@gmail.com"
 
   # Academic websites
@@ -51,13 +51,13 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "dLLM-Cache NCFM "
+  github           : "maomaocun"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with your Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -84,12 +84,8 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+  preprints:
+    title: 'Selected Publications & Preprints'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -143,14 +139,18 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "yicun-yang.jpg" # Social media default site image
+og_description           : *description # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Person"
+  name                   : "Yicun Yang"
+  links:
+    - "https://maomaocun.github.io/"
+    - "https://scholar.google.com.hk/citations?user=zKnktocAAAAJ&hl=zh-CN"
+    - "https://www.alphaxiv.org/@yicun-yang"
+    - "https://github.com/maomaocun"
 
 
 # Analytics
@@ -221,16 +221,7 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
     output: true
     permalink: /:collection/:path/
 
@@ -255,15 +246,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -273,21 +255,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
       author_profile: true
       share: true
 
