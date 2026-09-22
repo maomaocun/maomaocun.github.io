@@ -4,8 +4,8 @@ collection: publications
 category: preprints
 permalink: /publication/dllm-cache/
 excerpt: "An adaptive caching framework that reduces redundant computation during diffusion LLM inference."
-date: 2025-05-17
-venue: 'ICML 2026'
+date: 2026-05-01
+venue: 'ICML'
 paperurl: 'https://arxiv.org/abs/2506.06295'
 codeurl: 'https://github.com/maomaocun/dLLM-cache'
 citation: 'Liu, Zhiyuan, Yicun Yang, Yaojie Zhang, Junjie Chen, Chang Zou, Qingyuan Wei, Shaobo Wang, and Linfeng Zhang. (2025). "dLLM-Cache: Accelerating Diffusion Large Language Models with Adaptive Caching." ICML 2026.'

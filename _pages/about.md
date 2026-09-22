@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: false
 excerpt: "Yicun Yang is a Ph.D. student in Artificial Intelligence at HKUST(GZ), working on discrete diffusion language models and efficient AI systems."
 author_profile: true
 redirect_from:

@@ -171,6 +171,7 @@ exclude:
   - .asset-cache
   - .bundle
   - .github
+  - .devcontainer
   - .jekyll-assets-cache
   - .sass-cache
   - assets/js/_main.js
@@ -180,6 +181,9 @@ exclude:
   - Capfile
   - config
   - Dockerfile
+  - docker-compose.yaml
+  - README.md
+  - CONTRIBUTING.md
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
@@ -192,6 +196,25 @@ exclude:
   - README
   - tmp
   - vendor
+  - markdown_generator
+  - scripts
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - talkmap_out.ipynb
+  - files/paper1.pdf
+  - files/paper2.pdf
+  - files/paper3.pdf
+  - files/slides1.pdf
+  - files/slides2.pdf
+  - files/slides3.pdf
+  - files/bibtex1.bib
+  - images/500x300.png
+  - images/bio-photo.jpg
+  - images/bio-photo-2.jpg
+  - images/editing-talk.png
+  - images/profile.png
+  - images/themes
 keep_files:
   - .git
   - .svn
