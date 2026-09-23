@@ -25,10 +25,10 @@ author:
   # Biographic information
   avatar           : "yicun-yang.jpg"
   name             : "Yicun Yang"
-  pronouns         : "maomaocun" # example: "she/her"  
+  pronouns         : # Optional pronouns
   bio              : "Ph.D. student in AI at HKUST(GZ), working with the EPIC Lab on discrete diffusion LLMs and efficient AI." # A short bio that appears in the author profile section
   location         : "Guangzhou, China"
-  employer         : "HKUST(GZ) · EPIC Lab"
+  employer         : "HKUST(GZ)"
   uri              : "https://www.alphaxiv.org/@yicun-yang" # URL
   email            : "yangyicun187@gmail.com"
 
@@ -121,7 +121,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true
   path                   : # blank (default) uses feed.xml
 
 

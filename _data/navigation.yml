@@ -8,17 +8,17 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Research"
-    url: /#research
-
   - title: "Publications"
     url: /publications/
 
-  - title: "News"
-    url: /#news
+  - title: "Research"
+    url: /#research
 
   - title: "CV"
     url: /cv/
+
+  - title: "Google Scholar"
+    url: https://scholar.google.com.hk/citations?user=zKnktocAAAAJ&hl=zh-CN
 
   - title: "GitHub"
     url: https://github.com/maomaocun

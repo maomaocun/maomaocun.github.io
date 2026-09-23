@@ -5,9 +5,11 @@ permalink: /cv/
 author_profile: true
 ---
 
+[Email](mailto:yangyicun187@gmail.com) · [Google Scholar](https://scholar.google.com.hk/citations?user=zKnktocAAAAJ&hl=zh-CN) · [GitHub](https://github.com/maomaocun)
+
 ## Education
 
-- **Ph.D. in Artificial Intelligence**, The Hong Kong University of Science and Technology (Guangzhou), AI Thrust, 2026–present. Advised by Prof. Linfeng Zhang and Prof. Xuming Hu.
+- **Ph.D. in Artificial Intelligence**, The Hong Kong University of Science and Technology (Guangzhou), AI Thrust, 2026–present. Primarily supervised by Prof. Linfeng Zhang and co-supervised by Prof. Xuming Hu.
 - **B.Eng. in Software Engineering**, Harbin Institute of Technology, 2022–2026.
 
 ## Research experience
@@ -24,9 +26,9 @@ Discrete diffusion language models · efficient LLM inference · adaptive cachin
 - [dLLM-Var](https://github.com/maomaocun/dLLM-Var) — native variable-length generation for diffusion LLMs.
 - [dLLM-Factory](https://github.com/maomaocun/dLLM-Factory) — tools for training diffusion language models.
 
-## Selected publications
+## Publications
 
-<ul>{% for post in site.publications reversed %}
+<ul class="cv-publications">{% assign papers = site.publications | sort: "date" | reverse %}{% for post in papers %}
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
 

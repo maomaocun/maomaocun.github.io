@@ -1,0 +1,24 @@
+<article class="publication-card">
+  <p class="publication-card__meta">{{ post.venue }} · {{ post.date | date: "%Y" }}</p>
+  <h2><a href="{{ post.paperurl | default: post.url }}">{{ post.title }}</a></h2>
+  {% if post.authors %}
+    <p class="publication-card__authors">
+      {% for person in post.authors %}{% if person == "Yicun Yang" %}<strong>{{ person }}</strong>{% else %}{{ person }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+    </p>
+  {% elsif post.author_note %}
+    <p class="publication-card__authors">LLaDA2.2 team, including <strong>Yicun Yang</strong></p>
+  {% endif %}
+  {% if post.excerpt %}<p class="publication-card__summary">{{ post.excerpt }}</p>{% endif %}
+  {% if post.author_note %}<p class="publication-card__note">{{ post.author_note }}</p>{% endif %}
+  <div class="publication-card__links">
+    {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+    {% if post.codeurl %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
+    <a href="{{ post.url }}">Details</a>
+  </div>
+  {% if post.citation %}
+    <details class="publication-card__citation">
+      <summary>Citation</summary>
+      <p>{{ post.citation }}</p>
+    </details>
+  {% endif %}
+</article>
