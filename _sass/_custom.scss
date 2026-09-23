@@ -359,6 +359,71 @@
   color: #6f4c17;
 }
 
+.cv-print-header {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff;
+    color: #172b3d;
+    font-size: 10pt;
+  }
+
+  #main {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #main > .sidebar,
+  .cv-download,
+  .cv-links,
+  .page__title {
+    display: none;
+  }
+
+  .cv-print-header {
+    display: block;
+    margin-bottom: 1.2em;
+    padding-bottom: 0.7em;
+    border-bottom: 1px solid #ccd6df;
+  }
+
+  .cv-print-header h1 {
+    margin: 0 0 0.15em;
+    font-size: 2em;
+  }
+
+  .cv-print-header p {
+    margin: 0.1em 0;
+    font-size: 0.9em;
+  }
+
+  .archive,
+  .page {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cv-publication {
+    break-inside: avoid;
+  }
+
+  h2 {
+    break-after: avoid;
+  }
+}
+
 @media (max-width: 767px) {
   #main > .sidebar {
     display: none;

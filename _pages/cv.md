@@ -5,7 +5,15 @@ permalink: /cv/
 author_profile: true
 ---
 
-[Email](mailto:yangyicun187@gmail.com) · [Google Scholar](https://scholar.google.com.hk/citations?user=zKnktocAAAAJ&hl=zh-CN) · [GitHub](https://github.com/maomaocun)
+<div class="cv-print-header">
+  <h1>Yicun Yang</h1>
+  <p>Ph.D. Student in Artificial Intelligence · HKUST(GZ)</p>
+  <p>yangyicun187@gmail.com · maomaocun.github.io</p>
+</div>
+
+<p class="cv-download"><a class="btn home-button home-button--primary" href="/files/Yicun_Yang_CV.pdf" download>Download CV (PDF)</a></p>
+
+<p class="cv-links"><a href="mailto:yangyicun187@gmail.com">Email</a> · <a href="https://scholar.google.com.hk/citations?user=zKnktocAAAAJ&hl=zh-CN">Google Scholar</a> · <a href="https://github.com/maomaocun">GitHub</a></p>
 
 ## Education
 
